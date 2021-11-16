@@ -1,0 +1,24 @@
+{
+  "name": "e-library",
+  "version": "1.0.0",
+  "description": "An online library to view books, make book requests, and read books online for any institution",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frictious/e-library.git"
+  },
+  "author": "Friction",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frictious/e-library/issues"
+  },
+  "homepage": "https://github.com/frictious/e-library#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
