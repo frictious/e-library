@@ -3,6 +3,24 @@
     padding: 0px;
 }
 
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* ALL LINKS */
+a{
+    text-decoration: none;
+    color: #a8a6a6;
+}
+
+a:hover{
+    color: #686767;
+}
+
 /* Logo Area */
 .logo{
     width: 90%;
@@ -25,7 +43,8 @@
     padding: 5px;
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(250, 129, 16);
+    background-color: rgb(255, 52, 1);
+    color: white;
     text-transform: capitalize;
     font-size: 20px;
     box-sizing: border-box;
@@ -38,14 +57,15 @@
 /* NAVIGATION AREA */
 nav.navigation{
     width: 100%;
-    height: 50px;
+    height: 80px;
     border-bottom: 5px solid rgb(114, 245, 245);
-    border-top: 5px solid rgb(114, 245, 245);
+    /* border-top: 5px solid rgb(114, 245, 245); */
+    background-color: rgb(230, 228, 228);
     box-sizing: border-box;
 }
 
 nav.navigation ul{
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
     height: 100%;
     box-sizing: border-box;
@@ -60,19 +80,42 @@ nav.navigation ul li{
     width: 100%;
     text-align: center;
     box-sizing: border-box;
-    padding: 10px;
+    font-size: 20px;
+    position: relative;
 }
 
-/* ALL LINKS */
-a{
-    text-decoration: none;
-    color: #a8a6a6;
+nav.navigation ul li:hover{
+    background-color: lightgray;
+    color: white;
 }
 
-a:hover{
-    color: #686767;
+nav.navigation ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
 }
 
+nav.navigation ul li ul{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    display: block;
+}
+
+nav.navigation ul li ul li{
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+    display: none;
+}
+
+nav.navigation ul li:hover ul li{
+    display: block;
+}
 
 /* MAIN SECTION */
 .container{
@@ -80,3 +123,78 @@ a:hover{
     margin: 20px auto;
 }
 
+/* MAIN TITLE */
+h2.title{
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* CARD */
+div.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 15%;
+    margin: 10px;
+    padding: 15px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card span{
+    font-size: 15px;
+}
+
+/* BLUE */
+.blue{
+    color: rgb(39, 193, 245);
+}
+
+.border-blue{
+    border: 1px solid rgb(39, 193, 245);
+    color: rgb(39, 193, 245);
+}
+
+/* BROWN */
+.brown{
+    color: rgb(119, 14, 14);
+}
+
+.border-brown{
+    border: 1px solid rgb(161, 18, 18);
+    color: rgb(161, 18, 18);
+}
+
+/* GREEN */
+.green{
+    color: rgb(21, 163, 21);
+}
+
+.border-green{
+    border: 1px solid rgb(22, 187, 22);
+    color: rgb(22, 187, 22);
+}
+
+
+/* FOOTER */
+footer{
+    border-top: 2px solid rgb(230, 228, 228);
+    padding: 10px 0px;
+    font-weight: bold;
+    margin-top: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}

@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Library</title>
-    <link rel="stylesheet" href="/css/index.css" type="text/css">
-</head>
-<body>
-    <!-- Header logo area -->
-    <header class="logo">
-        <img src="Logo" alt="Logo">
-        <a href="/logout" class="logout-btn btn-danger">Logout</a>
-    </header>
-
-    <!-- Navigation Area -->
-    <nav class="navigation">
-        <ul class="container">
-            <li><a href="/">Dashboard</a></li>
-            <li><a href="/books">View Books</a></li>
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/logout">Logout</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Area -->
-    <main class="container">
-        <h2>THIS IS THE MAIN CONTENT AREA</h2>
+<%- include('partials/header') %>
+        <div class="cards">
+            <section class="card border-blue">
+                <i class="fa fa-bars fa-5x blue"></i>
+                <h3>Number</h3>
+                <span>Books Issued</span>
+            </section>
+            <section class="card border-brown">
+                <i class="fa fa-recycle fa-5x brown"></i>
+                <h3>Number</h3>
+                <span>Books Not Returned Yet</span>
+            </section>
+            <section class="card border-green">
+                <i class="fa fa-book fa-5x green"></i>
+                <h3>Number</h3>
+                <span>Books Requested</span>
+            </section>
+        </div>
     </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="text-center">
+        <p>
+            &copy; Friction | <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </footer>
 </body>
 </html>
